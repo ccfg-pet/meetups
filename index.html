@@ -1,37 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Casual College Fitness Group — SRJC Petaluma Walking Meetup</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casual College Fitness Group</title>
   <style>
-    :root{
-      --bg:#0f0d15;
-      --text:#f6f2ff;
-      --muted:#d5ccee;
-      --card:#1a1526;
-      --card-2:#211a33;
-      --accent:#c77dff;       /* lavender */
-      --accent-2:#ff7ac3;     /* pink */
-      --accent-3:#7c4dff;     /* deep violet */
-      --link:#ffd166;         /* warm highlight for links */
-      --ok:#86efac;
+    :root {
+      --primary: #4CAF50;
+      --secondary: #81C784;
+      --indigo: #4a6fa5;
+      --violet: #6a4c93;
+      --pink: #ffb3c6;
+      --text-dark: #222;
+      --text-light: #fff;
     }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      background: radial-gradient(1200px 600px at 20% -10%, rgba(255,122,195,0.12), transparent 60%),
-                  radial-gradient(1200px 800px at 100% 0%, rgba(124,77,255,0.18), transparent 60%),
-                  var(--bg);
-      color:var(--text);
-      line-height:1.6;
+
+    html {
+      scroll-behavior: smooth;
     }
-    header{
-      padding: 64px 20px 36px;
-      background:
-        linear-gradient(180deg, rgba(124,77,255,0.45), rgba(199,125,255,0.35) 40%, rgba(0,0,0,0) 100%),
-        radial-gradient(800px 320px at 70% -10%, rgba(255,122,195,0.25), transparent 70%),
-        linear
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text-dark);
+      background: linear-gradient(90deg, var(--indigo), var(--violet), var(--pink));
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(90deg, var(--indigo), var(--violet));
+      color: var(--text-light);
+      padding: 4rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      font-weight: 700;
+    }
+
+    header p {
+      margin-top: 1rem;
+      font-size: 1.25rem;
+      opacity: 0.9;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    .card {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 14px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      margin-bottom: 2rem;
+    }
+
+    .highlight {
+      border-left: 6px solid var(--primary);
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 1.8rem;
+      color: var(--primary);
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      background: #f9f9f9;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .note {
+      font-style: italic;
+      color: #555;
+      margin-top: 1.5rem;
+      padding-left: 0.5rem;
+      border-left: 3px solid #ccc;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+      .card {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Casual College Fitness Group</h1>
+    <p>A walking meetup for students and employees on the Petaluma campus</p>
+  </header>
+
+  <main>
+    <section class="card highlight">
+      <h2>👟 Next Walk</h2>
+      <p><strong>Date:</strong> Wednesday, September 10<br>
+         <strong>Time:</strong> 12:15 PM</p>
+      <p><strong>Meeting Spot:</strong> Inside the cafeteria—small space, big energy. Look for friendly faces near the windows or someone stretching by the coffee bar.</p>
+      <p><strong>Route:</strong> We walk around the perimeter of the campus buildings—an easy loop with fresh air and familiar paths.</p>
+      <p><strong>Duration:</strong> Usually around 30–45 minutes, depending on pace and conversation.</p>
+    </section>
+
+    <section class="card">
+      <h2>🌿 Welcome</h2>
+      <p>This group is open to anyone on the Petaluma campus who wants to move, connect, or just take a quiet break from the week.</p>
+      <ul>
+        <li><strong>Come as you are:</strong> street shoes are fine</li>
+        <li><strong>Weather:</strong> we walk unless it’s unsafe</li>
+        <li><strong>Late arrivals:</strong> head towards the creek—we’ll be moving up in that direction</li>
+      </ul>
+      <p class="note">(Sometimes no one shows up. That’s okay. This group isn’t about attendance—it’s about possibility. You’re welcome to walk the loop whether others are there or not. If you arrive and don’t see anyone, you didn’t do anything wrong. You’re still part of it. We keep it casual. No sign-up, no pressure, no guarantees. Just movement and connection, when it happens.)</p>
+    </section>
+
+    <section class="card">
+      <h2>📸 Add your moments</h2>
+      <p>Got photos or stories from a walk? Send them in and we’ll feature a few highlights here.</p>
+    </section>
+
+    <section class="card">
+      <h2>📬 Contact</h2>
+      <p>We check messages occasionally. If you don’t hear back, feel free to walk anyway.</p>
+      <p>
+        <script>
+          const user = "casual.walk.outdoors269";
+          const domain = "aleeas.com";
+          const email = `${user}@${domain}`;
+          document.write(`<a href="mailto:${email}">${user} [at] ${domain}</a>`);
+        </script>
+      </p>
+      <p style="font-size: 0.9rem; color: #555; margin-top: 1.5rem;">
+        This group is informal and not affiliated with any official campus programs.  
+        We aim to be welcoming to all members of the campus community.  
+        For reference, the college’s official non-discrimination policy is available  
+        <a href="https://access.santarosa.edu/srjc-non-discrimination-statement" target="_blank">here</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Casual College Fitness Group · Petaluma Campus · <a href="mailto:casual.walk.outdoors269@aleeas.com">Contact</a>
+  </footer>
+</body>
+</html>
